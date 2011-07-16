@@ -12,8 +12,8 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'django_test',                      # Or path to database file if using sqlite3.
-        'USER': 'django_teset',                      # Not used with sqlite3.
+        'NAME': 'django_test_db',                      # Or path to database file if using sqlite3.
+        'USER': 'django_test',                      # Not used with sqlite3.
         'PASSWORD': '123123',                  # Not used with sqlite3.
         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
@@ -115,8 +115,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
+    'poll'
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
